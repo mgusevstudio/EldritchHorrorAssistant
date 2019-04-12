@@ -1,0 +1,81 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Dialog">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MyTransparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/colorTransparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="expandedappbar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">48sp
+        </item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="collapsedappbar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+
+    <style name="aboutTheme" parent="Base.Widget.AppCompat.Light.ActionBar">
+        <item name="colorControlNormal">@color/colorText</item>
+        <item name="titleTextColor">@color/colorText</item>
+    </style>
+
+    <style name="AppTheme.ColorHighlight">
+        <item name="android:colorControlHighlight">@color/colorHighlight</item>
+    </style>
+
+    <style name="Loader" parent="DialogTheme">
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <!-- Кастомная AppTheme.Launcher. Устанавливает в качестве фона вашу drawable -->
+    <style name="AppTheme.Launcher">
+        <item name="android:windowBackground">@drawable/splash</item>
+        <!-- для Android 5+ вы можете поменять цвет colorPrimaryDark, чтобы соответствовать цвету windowBackground -->
+        <!-- <item name="colorPrimaryDark">@android:color/white</item> -->
+    </style>
+
+    <style name="AppTheme.Transparent" parent="AppTheme">
+        <item name="windowActionBarOverlay">true</item>
+
+    </style>
+
+    <!--Full screen dialogue theme -->
+    <style name="DialogFragmentTheme" parent="AppTheme.Transparent">
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!--Hint size -->
+    <style name="TextLabel" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="0dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/start_data_result_edit_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@color/colorTransparent"
+            android:foreground="?attr/selectableItemBackground"
+            android:padding="8dp"
+            android:theme="@style/AppTheme.ColorHighlight"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/fragment_edit" />
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/start_data_result_initial_conditions_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="@string/initial_conditions"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/start_data_result_date_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/date"
+                    android:textColor="@color/colorSecondaryText" />
+
+                <TextView
+                    android:id="@+id/start_data_result_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textColor="@color/colorSecondaryText" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/start_data_result_ancient_one_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/ancientOne"
+                    android:textColor="@color/colorSecondaryText" />
+
+                <TextView
+                    android:id="@+id/start_data_result_ancient_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textColor="@color/colorSecondaryText" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/start_data_result_prelude_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/prelude_header"
+                    android:textColor="@color/colorSecondaryText" />
+
+                <TextView
+                    android:id="@+id/start_data_result_prelude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textColor="@color/colorSecondaryText" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/start_data_result_players_count_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/playersCount"
+                    android:textColor="@color/colorSecondaryText" />
+
+                <TextView
+                    android:id="@+id/start_data_result_players_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textColor="@color/colorSecondaryText" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/start_data_result_additional_rules_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="@string/additionalRules"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/start_data_result_simple_myths_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:text="@string/simpleMyths" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/start_data_result_normal_myths_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:text="@string/normalMyths" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/start_data_result_hard_myths_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:text="@string/hardMyths" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/start_data_result_starting_rumor_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:text="@string/startingRumor" />
+
+            </TableRow>
+        </TableLayout>
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
